@@ -30,6 +30,16 @@
 </table>
 
 <br>
+<hr>
+
+<form th:method="GET" th:action="@{'/admin_user/' + ${user.id} + '/edit'}">
+    <input type="submit" value="Update user"/>
+</form>
+<br>
+<form th:method="DELETE" th:action="@{'/admin_user/' + ${user.id}}">
+    <input type="submit" value="Delete user"/>
+</form>
+<br>
 <button><a href="/logout">logout</a></button>
 
 </body>
